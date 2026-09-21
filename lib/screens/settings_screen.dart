@@ -84,9 +84,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ? Brightness.light
               : Brightness.dark,
           statusBarBrightness: isThemeDark ? Brightness.dark : Brightness.light,
-          systemNavigationBarColor: isThemeDark
-              ? const Color(0xFF0A0F1E)
-              : const Color(0xFFF8FAFC),
+          systemNavigationBarColor: AppTheme.background,
           systemNavigationBarIconBrightness: isThemeDark
               ? Brightness.light
               : Brightness.dark,

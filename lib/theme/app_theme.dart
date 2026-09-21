@@ -11,14 +11,14 @@ class AppTheme {
   static const Color accent = Color(0xFFF97316);
   static const Color accentLight = Color(0xFFFB923C);
   
-  static Color get background => isDark ? const Color(0xFF0A0F1E) : const Color(0xFFF8FAFC);
-  static Color get surface => isDark ? const Color(0xFF131C2E) : const Color(0xFFFFFFFF);
-  static Color get card => isDark ? const Color(0xFF1A2540) : const Color(0xFFF1F5F9);
-  static Color get cardElevated => isDark ? const Color(0xFF1F2D4A) : const Color(0xFFE2E8F0);
-  static Color get textPrimary => isDark ? const Color(0xFFE2E8F0) : const Color(0xFF0F172A);
-  static Color get textSecondary => isDark ? const Color(0xFF94A3B8) : const Color(0xFF475569);
-  static Color get muted => isDark ? const Color(0xFF64748B) : const Color(0xFF64748B);
-  static Color get border => isDark ? const Color(0xFF243047) : const Color(0xFFE2E8F0);
+  static Color get background => isDark ? const Color(0xFF000000) : const Color(0xFFF4F1EA);
+  static Color get surface => isDark ? const Color(0xFF0A0A0A) : const Color(0xFFFAF8F5);
+  static Color get card => isDark ? const Color(0xFF121212) : const Color(0xFFEAE5DB);
+  static Color get cardElevated => isDark ? const Color(0xFF1C1C1C) : const Color(0xFFE0DBD0);
+  static Color get textPrimary => isDark ? const Color(0xFFF4F4F5) : const Color(0xFF24221F);
+  static Color get textSecondary => isDark ? const Color(0xFFA1A1AA) : const Color(0xFF68645E);
+  static Color get muted => isDark ? const Color(0xFF71717A) : const Color(0xFF8E8980);
+  static Color get border => isDark ? const Color(0xFF262626) : const Color(0xFFD6D0C3);
   static const Color error = Color(0xFFEF4444);
   static const Color success = Color(0xFF22C55E);
 
@@ -26,15 +26,15 @@ class AppTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      scaffoldBackgroundColor: const Color(0xFFF8FAFC),
+      scaffoldBackgroundColor: const Color(0xFFF4F1EA),
       colorScheme: const ColorScheme.light(
         primary: primary,
         secondary: accent,
-        surface: Color(0xFFFFFFFF),
+        surface: Color(0xFFFAF8F5),
         error: error,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
-        onSurface: Color(0xFF0F172A),
+        onSurface: Color(0xFF24221F),
         onError: Colors.white,
       ),
       fontFamily: 'Poppins',
@@ -46,15 +46,15 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 20,
           fontWeight: FontWeight.w600,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
           letterSpacing: -0.3,
         ),
-        iconTheme: IconThemeData(color: Color(0xFF0F172A)),
+        iconTheme: IconThemeData(color: Color(0xFF24221F)),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness: Brightness.dark,
           statusBarBrightness: Brightness.light,
-          systemNavigationBarColor: Color(0xFFF8FAFC),
+          systemNavigationBarColor: Color(0xFFF4F1EA),
           systemNavigationBarIconBrightness: Brightness.dark,
         ),
       ),
@@ -63,60 +63,60 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 32,
           fontWeight: FontWeight.w700,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
           letterSpacing: -0.5,
         ),
         displayMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 26,
           fontWeight: FontWeight.w600,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
           letterSpacing: -0.3,
         ),
         headlineMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 20,
           fontWeight: FontWeight.w600,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
         ),
         titleLarge: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w600,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
         ),
         titleMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 14,
           fontWeight: FontWeight.w500,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
         ),
         bodyLarge: TextStyle(
           fontFamily: 'Inter',
           fontSize: 15,
           fontWeight: FontWeight.w400,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
           height: 1.5,
         ),
         bodyMedium: TextStyle(
           fontFamily: 'Inter',
           fontSize: 13,
           fontWeight: FontWeight.w400,
-          color: Color(0xFF475569),
+          color: Color(0xFF68645E),
           height: 1.4,
         ),
         labelLarge: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 14,
           fontWeight: FontWeight.w600,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
           letterSpacing: 0.2,
         ),
         labelMedium: TextStyle(
           fontFamily: 'Inter',
           fontSize: 12,
           fontWeight: FontWeight.w500,
-          color: Color(0xFF475569),
+          color: Color(0xFF68645E),
           letterSpacing: 0.3,
         ),
       ),
@@ -149,46 +149,46 @@ class AppTheme {
       ),
       iconButtonTheme: IconButtonThemeData(
         style: IconButton.styleFrom(
-          foregroundColor: const Color(0xFF0F172A),
-          backgroundColor: const Color(0xFFF1F5F9),
+          foregroundColor: const Color(0xFF24221F),
+          backgroundColor: const Color(0xFFEAE5DB),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
         ),
       ),
       cardTheme: CardThemeData(
-        color: const Color(0xFFF1F5F9),
+        color: const Color(0xFFEAE5DB),
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: const BorderSide(color: Color(0xFFE2E8F0), width: 0.5),
+          side: const BorderSide(color: Color(0xFFD6D0C3), width: 0.5),
         ),
       ),
       dividerTheme: const DividerThemeData(
-        color: Color(0xFFE2E8F0),
+        color: Color(0xFFD6D0C3),
         thickness: 0.5,
         space: 0,
       ),
       bottomSheetTheme: const BottomSheetThemeData(
-        backgroundColor: Color(0xFFFFFFFF),
-        modalBackgroundColor: Color(0xFFFFFFFF),
+        backgroundColor: Color(0xFFFAF8F5),
+        modalBackgroundColor: Color(0xFFFAF8F5),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
         ),
       ),
       dialogTheme: DialogThemeData(
-        backgroundColor: const Color(0xFFF1F5F9),
+        backgroundColor: const Color(0xFFF4F1EA),
         elevation: 24,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
       ),
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: const Color(0xFFE2E8F0),
+        backgroundColor: const Color(0xFFE0DBD0),
         contentTextStyle: const TextStyle(
           fontFamily: 'Inter',
           fontSize: 13,
-          color: Color(0xFF0F172A),
+          color: Color(0xFF24221F),
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
@@ -197,12 +197,12 @@ class AppTheme {
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         color: primary,
-        linearTrackColor: Color(0xFFE2E8F0),
+        linearTrackColor: Color(0xFFD6D0C3),
       ),
       sliderTheme: const SliderThemeData(
         activeTrackColor: primary,
         thumbColor: primary,
-        inactiveTrackColor: Color(0xFFE2E8F0),
+        inactiveTrackColor: Color(0xFFD6D0C3),
         overlayColor: Color(0x260D9488),
         trackHeight: 3,
         thumbShape: RoundSliderThumbShape(enabledThumbRadius: 10),
@@ -214,15 +214,15 @@ class AppTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: const Color(0xFF0A0F1E),
+      scaffoldBackgroundColor: const Color(0xFF000000),
       colorScheme: const ColorScheme.dark(
         primary: primary,
         secondary: accent,
-        surface: Color(0xFF131C2E),
+        surface: Color(0xFF0A0A0A),
         error: error,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
-        onSurface: Color(0xFFE2E8F0),
+        onSurface: Color(0xFFF4F4F5),
         onError: Colors.white,
       ),
       fontFamily: 'Poppins',
@@ -234,15 +234,15 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 20,
           fontWeight: FontWeight.w600,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
           letterSpacing: -0.3,
         ),
-        iconTheme: IconThemeData(color: Color(0xFFE2E8F0)),
+        iconTheme: IconThemeData(color: Color(0xFFF4F4F5)),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.dark,
-          systemNavigationBarColor: Color(0xFF0A0F1E),
+          systemNavigationBarColor: Color(0xFF000000),
           systemNavigationBarIconBrightness: Brightness.light,
         ),
       ),
@@ -251,60 +251,60 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 32,
           fontWeight: FontWeight.w700,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
           letterSpacing: -0.5,
         ),
         displayMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 26,
           fontWeight: FontWeight.w600,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
           letterSpacing: -0.3,
         ),
         headlineMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 20,
           fontWeight: FontWeight.w600,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
         ),
         titleLarge: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w600,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
         ),
         titleMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 14,
           fontWeight: FontWeight.w500,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
         ),
         bodyLarge: TextStyle(
           fontFamily: 'Inter',
           fontSize: 15,
           fontWeight: FontWeight.w400,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
           height: 1.5,
         ),
         bodyMedium: TextStyle(
           fontFamily: 'Inter',
           fontSize: 13,
           fontWeight: FontWeight.w400,
-          color: Color(0xFF94A3B8),
+          color: Color(0xFFA1A1AA),
           height: 1.4,
         ),
         labelLarge: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 14,
           fontWeight: FontWeight.w600,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
           letterSpacing: 0.2,
         ),
         labelMedium: TextStyle(
           fontFamily: 'Inter',
           fontSize: 12,
           fontWeight: FontWeight.w500,
-          color: Color(0xFF94A3B8),
+          color: Color(0xFFA1A1AA),
           letterSpacing: 0.3,
         ),
       ),
@@ -337,46 +337,46 @@ class AppTheme {
       ),
       iconButtonTheme: IconButtonThemeData(
         style: IconButton.styleFrom(
-          foregroundColor: const Color(0xFFE2E8F0),
-          backgroundColor: const Color(0xFF1A2540),
+          foregroundColor: const Color(0xFFF4F4F5),
+          backgroundColor: const Color(0xFF161616),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
         ),
       ),
       cardTheme: CardThemeData(
-        color: const Color(0xFF1A2540),
+        color: const Color(0xFF121212),
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: const BorderSide(color: Color(0xFF243047), width: 0.5),
+          side: const BorderSide(color: Color(0xFF262626), width: 0.5),
         ),
       ),
       dividerTheme: const DividerThemeData(
-        color: Color(0xFF243047),
+        color: Color(0xFF262626),
         thickness: 0.5,
         space: 0,
       ),
       bottomSheetTheme: const BottomSheetThemeData(
-        backgroundColor: Color(0xFF131C2E),
-        modalBackgroundColor: Color(0xFF131C2E),
+        backgroundColor: Color(0xFF0A0A0A),
+        modalBackgroundColor: Color(0xFF0A0A0A),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
         ),
       ),
       dialogTheme: DialogThemeData(
-        backgroundColor: const Color(0xFF1A2540),
+        backgroundColor: const Color(0xFF121212),
         elevation: 24,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
       ),
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: const Color(0xFF1F2D4A),
+        backgroundColor: const Color(0xFF1C1C1C),
         contentTextStyle: const TextStyle(
           fontFamily: 'Inter',
           fontSize: 13,
-          color: Color(0xFFE2E8F0),
+          color: Color(0xFFF4F4F5),
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
@@ -385,12 +385,12 @@ class AppTheme {
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
         color: primary,
-        linearTrackColor: Color(0xFF243047),
+        linearTrackColor: Color(0xFF262626),
       ),
       sliderTheme: const SliderThemeData(
         activeTrackColor: primary,
         thumbColor: primary,
-        inactiveTrackColor: Color(0xFF243047),
+        inactiveTrackColor: Color(0xFF262626),
         overlayColor: Color(0x260D9488),
         trackHeight: 3,
         thumbShape: RoundSliderThumbShape(enabledThumbRadius: 10),
@@ -412,7 +412,9 @@ class AppTheme {
       );
 
   static LinearGradient get bgGradient => LinearGradient(
-        colors: isDark ? [const Color(0xFF0A0F1E), const Color(0xFF0D1528)] : [const Color(0xFFF8FAFC), const Color(0xFFE2E8F0)],
+        colors: isDark
+            ? [const Color(0xFF000000), const Color(0xFF0A0A0A)]
+            : [const Color(0xFFF7F5F0), const Color(0xFFECE7DE)],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       );

@@ -84,9 +84,7 @@ class _PassportMakerAppState extends State<PassportMakerApp>
             statusBarColor: Colors.transparent,
             statusBarIconBrightness:
                 isThemeDark ? Brightness.light : Brightness.dark,
-            systemNavigationBarColor: isThemeDark
-                ? const Color(0xFF0A0F1E)
-                : const Color(0xFFF8FAFC),
+            systemNavigationBarColor: AppTheme.background,
             systemNavigationBarIconBrightness:
                 isThemeDark ? Brightness.light : Brightness.dark,
           ),

@@ -1059,9 +1059,7 @@ class _EditorScreenState extends State<EditorScreen>
               ? Brightness.light
               : Brightness.dark,
           statusBarBrightness: isThemeDark ? Brightness.dark : Brightness.light,
-          systemNavigationBarColor: isThemeDark
-              ? const Color(0xFF0A0F1E)
-              : const Color(0xFFF8FAFC),
+          systemNavigationBarColor: AppTheme.background,
           systemNavigationBarIconBrightness: isThemeDark
               ? Brightness.light
               : Brightness.dark,
@@ -3257,18 +3255,12 @@ class _EditorScreenState extends State<EditorScreen>
   Widget _buildClothPanel() {
     final catalog = {
       'man': [
-        _ClothingItem('Student White Shirt', 'assets/clothes/man_student_white.png'),
-        _ClothingItem('Student Blue Shirt', 'assets/clothes/man_student_blue.png'),
-        _ClothingItem('Student Blazer', 'assets/clothes/man_student_blazer.png'),
         _ClothingItem('Black Suit', 'assets/clothes/man_suit_black.png'),
         _ClothingItem('Navy Suit', 'assets/clothes/man_suit_blue.png'),
         _ClothingItem('White Shirt', 'assets/clothes/man_shirt_white.png'),
         _ClothingItem('Grey Suit', 'assets/clothes/man_suit_grey.png'),
       ],
       'woman': [
-        _ClothingItem('Student White Blouse', 'assets/clothes/woman_student_white.png'),
-        _ClothingItem('Student Blue Blouse', 'assets/clothes/woman_student_blue.png'),
-        _ClothingItem('Student Blazer', 'assets/clothes/woman_student_blazer.png'),
         _ClothingItem('Black Blazer', 'assets/clothes/woman_suit_black.png'),
         _ClothingItem('Navy Blazer', 'assets/clothes/woman_suit_blue.png'),
         _ClothingItem('White Blouse', 'assets/clothes/woman_shirt_white.png'),
